@@ -21,7 +21,7 @@ module.exports = {
             $.ajax({
                 type: "POST",
                 async: false,
-                url: "https://dev1.waanee.com/api/index.php/api/listPost/community",
+                url: httpAjax+"/listPost/community",
                 data: '',
                 dataType: 'json',
                 success: function (data) {
