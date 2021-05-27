@@ -4,7 +4,6 @@
     <nav class="uk-navbar-container header container" uk-navbar>
         <div class="uk-navbar-left">
             <router-link to="/">
-                <!-- <img src="./assets/images/logo.png?v=0.1" class="logo"> -->
                 LOGO
             </router-link>
         </div>

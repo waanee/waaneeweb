@@ -3,7 +3,7 @@
         intro
 
         <div id="test">TEST</div>
-        <button type="button" @click="jqueryTest">jquery TEST</button>
+        <button type="button" @click="ajaxTest">jquery TEST</button>
     </div>
 </template>
 
@@ -13,6 +13,26 @@ module.exports = {
         jqueryTest(){
             $('#test').hide();
             // jquery 사용 가능 확인!! 
+        },
+
+        ajaxTest(){
+            
+            // jquery ajax 사용가능 확인!!
+            $.ajax({
+                type: "POST",
+                async: false,
+                url: "https://dev1.waanee.com/api/index.php/api/listPost/community",
+                data: '',
+                dataType: 'json',
+                success: function (data) {
+                    console.log(data);
+
+                },
+                error: function (e) {
+                    console.log("ERROR : ", e);
+                }
+            });
+            
         }
     },
 }

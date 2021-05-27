@@ -13,12 +13,8 @@ let RegisterSuccess = () => import('./components/cpn-registerSuccess.js')
 let RollingPage = () => import('./components/cpn-rolling.js')
 
 let NotFoundComponent = httpVueLoader('./components//NotFound.vue')
-
 let ModalContents = () => import('./components/cpn-modal.js')
-
 let CommunityDetail = httpVueLoader('./components/Post.vue')
-
-//let MainPage = httpVueLoader('./pages/Main.vue')
 let Intro = httpVueLoader('./pages/Intro.vue')
 
 // router path components
