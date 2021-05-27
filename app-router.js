@@ -6,16 +6,18 @@ let AboutPage = () => import('./components/cpn-about.js')
 let PortfolioDetail = () => import('./components/cpn-portfolio-detail.js')
 
 let Community = () => import('./components/cpn-community.js')
-let CommunityDetail = () => import('./components/cpn-post.js')
+//let CommunityDetail = () => import('./components/cpn-post.js')
 
 let RegisterPage = () => import('./components/cpn-register.js')
 let RegisterSuccess = () => import('./components/cpn-registerSuccess.js')
 
 let RollingPage = () => import('./components/cpn-rolling.js')
 
-let NotFoundComponent = () => import('./components/notFound.js')
+let NotFoundComponent = httpVueLoader('./components//NotFound.vue')
 
-let ModalContents = () => import('./components/cpn-modal.js');
+let ModalContents = () => import('./components/cpn-modal.js')
+
+let CommunityDetail = httpVueLoader('./components/Post.vue')
 
 // router path components
 var routes = [
@@ -24,6 +26,11 @@ var routes = [
     {path:'/portfolio', name: 'portfolio', component: Portfolio},
     {path:'/blogList', name: 'blog', component: Blog},
     {path:'/portfolio/detail', name: 'portfolioView', component: PortfolioDetail},
+    {path:'/post/:id', name: 'CommunityDetail', component: CommunityDetail},
+    {path:'/register', name: 'regiser', component: RegisterPage},
+    {path:'/regSuccess', name: 'regSuccess', component: RegisterSuccess},
+    {path:'/rolling', name: 'Rolling', component: RollingPage},
+    {path: '*', component: NotFoundComponent },
     /*{path:'/community/', name: 'Community', component: Community,
         children:[
             {
@@ -31,11 +38,6 @@ var routes = [
             }
         ],
     },*/
-    {path:'/post/:id', name: 'CommunityDetail', component: CommunityDetail},
-    {path:'/register', name: 'regiser', component: RegisterPage},
-    {path:'/regSuccess', name: 'regSuccess', component: RegisterSuccess},
-    {path:'/rolling', name: 'Rolling', component: RollingPage},
-    {path: '*', component: NotFoundComponent }
 ];
 
 const scrollBehavior = (to, from, savedPosition) => {

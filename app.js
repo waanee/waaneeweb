@@ -1,9 +1,11 @@
-let HeaderComponent = () => import('./components/cpn-header.js?ver=1');
+//let HeaderComponent = () => import('./components/cpn-header.js?ver=1');
 let FooterComponent = () => import('./components/cpn-footer.js');
 let WriteComponent = () => import('./components/cpn-writePost.js');
 let LoginComponent = () => import('./components/cpn-login.js');
 //let ModalComponent = () => import('./components/cpn-modal.js');
 //let vueScrollBehavior = () => import('./vue-scroll-behavior.js');
+
+let HeaderComponent = httpVueLoader('components/Header.vue');
 
 /* Vue.use(vueScrollBehavior, {
     router: router,
@@ -23,7 +25,7 @@ var app = new Vue({
     },
     components: {
         //HeaderComponent,
-        'HeaderComponent': httpVueLoader('components/Header.vue'),
+        'HeaderComponent': HeaderComponent,
         FooterComponent,
         WriteComponent,
         LoginComponent,
