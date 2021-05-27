@@ -4,28 +4,18 @@
     <nav class="uk-navbar-container header container" uk-navbar>
         <div class="uk-navbar-left">
             <router-link to="/">
-                <img src="./images/logo.png?v=0.1" class="logo">
+                <!-- <img src="./assets/images/logo.png?v=0.1" class="logo"> -->
+                LOGO
             </router-link>
         </div>
         <div class="uk-navbar-center mobile-hide">
             <ul class="uk-navbar-nav">
-                <!--
-                <li><router-link to="/">Dayily feed</router-link></li>
-                <li><router-link to="/rolling">메뉴정하기</router-link></li>
-                <li><router-link to="/portfolio">Portfolio</router-link></li>
-                <li><router-link to="/about">About</router-link></li>
-                <li><router-link to="/portfolio">Guest</router-link></li>
-                -->
+                <li><router-link to="/">MAIN</router-link></li>
+                <li><router-link to="/rolling">MENU1</router-link></li>
+                <li><router-link to="/portfolio">MENU2</router-link></li>
+                <li><router-link to="/about">MENU3</router-link></li>
+                <li><router-link to="/portfolio">MENU4</router-link></li>
             </ul>
-
-
-            <div class="uk-navbar-item">
-                <form action="javascript:void(0)">
-                    <input class="uk-input uk-form-width-small" type="text" placeholder="검색" style="width:400px; background:#f9f9f9; border-radius:30px; padding:0px 20px;">
-                    <!-- <button class="uk-button uk-button-default" uk-icon="icon: search" style="width:80px; border:0px;"></button> -->
-                </form>
-            </div>
-
         </div>
         <div class="uk-navbar-right">
 

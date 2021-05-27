@@ -6,7 +6,6 @@ let AboutPage = () => import('./components/cpn-about.js')
 let PortfolioDetail = () => import('./components/cpn-portfolio-detail.js')
 
 let Community = () => import('./components/cpn-community.js')
-//let CommunityDetail = () => import('./components/cpn-post.js')
 
 let RegisterPage = () => import('./components/cpn-register.js')
 let RegisterSuccess = () => import('./components/cpn-registerSuccess.js')
@@ -19,9 +18,12 @@ let ModalContents = () => import('./components/cpn-modal.js')
 
 let CommunityDetail = httpVueLoader('./components/Post.vue')
 
+//let MainPage = httpVueLoader('./pages/Main.vue')
+let Intro = httpVueLoader('./pages/Intro.vue')
+
 // router path components
 var routes = [
-    {path:'/', name: 'index', component: Community},
+    {path:'/', name: 'index', component: Intro},
     {path:'/about', name: 'about', component: AboutPage},
     {path:'/portfolio', name: 'portfolio', component: Portfolio},
     {path:'/blogList', name: 'blog', component: Blog},

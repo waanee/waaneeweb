@@ -14,7 +14,7 @@ export default{
                     uk-grid="masonry: true"
                     > 
 
-                <div id="itemRoading" style="width:100%; display:none; text-align:center;"><img src="../images/ajax-loader.gif"></div>    
+                <div id="itemRoading" style="width:100%; display:none; text-align:center;"><img src="../assets/images/ajax-loader.gif"></div>    
 
                 <div v-for="(item, index) in posts" v-bind:key="item.id" >                
                     <div class="uk-card uk-card-default round-box">
