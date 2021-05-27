@@ -22,7 +22,8 @@ var app = new Vue({
         }
     },
     components: {
-        HeaderComponent,
+        //HeaderComponent,
+        'HeaderComponent': httpVueLoader('components/Header.vue'),
         FooterComponent,
         WriteComponent,
         LoginComponent,
