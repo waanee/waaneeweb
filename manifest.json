@@ -1,0 +1,22 @@
+{
+  "short_name": "waanee",
+  "name": "waanee",
+  "icons": [{
+    "src": "./images/logoIcon.png",
+    "type": "image/png",
+    "sizes": "128x126"
+  },{
+    "src": "./images/logoIcon.png",
+    "type": "image/png",
+    "sizes": "152x152"
+  },{
+    "src": "./images/logoIcon.png",
+    "type": "image/png",
+    "sizes": "192x192"
+  }],
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "display": "standalone",
+  "orientation": "portrait",
+  "start_url": "/"
+}

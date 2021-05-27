@@ -1,0 +1,21 @@
+<script src="https://unpkg.com/vue"></script>
+<script type="text/x-template" id="loginTemplate">
+<div id="login" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body">
+        <h2 class="uk-modal-title">LOGIN</h2>
+        <form action="/" @submit.prevent="onSubmit(id, password, mb_type)">
+        <fieldset class="uk-fieldset">
+        <div class="uk-margin">
+            <input class="uk-input" v-model="id" type="text" placeholder="USER ID">
+        </div>
+        <div class="uk-margin">
+            <input class="uk-input" v-model="password" type="password" placeholder="PASSWORD">
+        </div>
+        <p class="uk-text-right">
+        <input class="uk-button uk-button-primary" type="submit" value="Login">
+        </p>
+        </fieldset>
+        </form>
+    </div>
+</div>
+</script>
